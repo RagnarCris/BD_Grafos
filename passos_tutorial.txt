@@ -1,0 +1,7 @@
+Grupo: Cristiano Nascimento e Edson Lopes
+
+Primeiramente, deve-se selecionar o dataset desejado e baixar os CSVs que serão utilizados, que no nosso caso são os presentes no link <https://www.kaggle.com/csanhueza/the-marvel-universe-social-network>. Para baixar os arquivos necessários, basta clicar no botão destacado na Figura 1 abaixo, para cada um dos arquivos destacados no canto inferior esquerdo da imagem.
+
+prints/print_1_download_csv.png
+
+Com a fonte de dados organizada e em mãos, basta passar para o blazegraph no formato de RDF.
