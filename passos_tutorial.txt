@@ -1,7 +1,13 @@
 Grupo: Cristiano Nascimento e Edson Lopes
 
+Para importar os dados do CSV para o Neo4j:
 Primeiramente, deve-se selecionar o dataset desejado e baixar os CSVs que serão utilizados, que no nosso caso são os presentes no link <https://www.kaggle.com/csanhueza/the-marvel-universe-social-network>. Para baixar os arquivos necessários, basta clicar no botão destacado na Figura 1 abaixo, para cada um dos arquivos destacados no canto inferior esquerdo da imagem.
 
 prints/print_1_download_csv.png
 
-Com a fonte de dados organizada e em mãos, basta passar para o blazegraph no formato de RDF.
+Com a fonte de dados organizada e em mãos, deve-se alterar a configuração do Neo4j para que ele permita o carregamento de um arquivo que está na sua máquina. Para isso, deve-se ir no arquivo neo4j.conf, comentar a linha (colocando # no início dela) dbms.directories.import=import e descomentar a linha #dbms.security.allow_csv_import_from_file_urls=true.
+Para saber onde está o arquivo neo4j.conf que deve-se alterar, basta ir no Neo4j Desktop, no seu DB, e clicar no botão "Open Folder"->"configuration", conforme é mostrado na Figura 2 abaixo:
+
+prints/print_find_configuration.png
+
+
